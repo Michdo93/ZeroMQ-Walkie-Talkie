@@ -106,8 +106,7 @@ class WalkieTalkieNode:
                 while self.running:
                     time.sleep(0.5)
         except KeyboardInterrupt:
-            print("
-Shutting down Walkie-Talkie Node...")
+            print("Shutting down Walkie-Talkie Node...")
         finally:
             self.running = False
             self.audio_socket.close()
